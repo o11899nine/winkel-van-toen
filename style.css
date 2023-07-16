@@ -1,0 +1,43 @@
+:root {
+  --color-white: #F5F5F5;
+  --color-light-sand: #F2EAD3;
+  --color-dark-sand: #DFD7BF;
+  --color-brown: #3F2305;
+  font-size: 62.5%;
+}
+
+
+body {
+  background-color: var(--color-white);
+  background-image: url("img/old-shop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header {
+  background-color: var(--color-brown);
+  height: 200px;
+}
+
+.logo {
+  color: var(--color-light-sand);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.logo-title {
+  font-family: 'Newsreader', serif;
+  font-size: 3rem;
+}
+
+.logo-slogan {
+  font-family: 'Amatic SC', cursive;
+  font-size: 3rem;
+}
+
+
+
