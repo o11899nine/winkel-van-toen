@@ -20,7 +20,7 @@ body {
   height: 200px;
 }
 
-.logo {
+.header-logo {
   color: var(--color-light-sand);
   display: flex;
   flex-direction: column;
@@ -28,16 +28,3 @@ body {
   align-items: center;
   height: 100%;
 }
-
-.logo-title {
-  font-family: 'Newsreader', serif;
-  font-size: 3rem;
-}
-
-.logo-slogan {
-  font-family: 'Amatic SC', cursive;
-  font-size: 3rem;
-}
-
-
-
