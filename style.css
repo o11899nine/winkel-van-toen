@@ -20,6 +20,7 @@ p {
 
 .hero-section {
   height: 100vh;
+  height: 100svh;
   background-image: url("img/old-shop.jpg");
   background-position: top;
   background-repeat: no-repeat;
