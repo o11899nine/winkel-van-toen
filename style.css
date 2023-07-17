@@ -1,29 +1,39 @@
 :root {
-  --site-color-01: #F5F5F5;
-  --site-color-02: #F2EAD3;
-  --site-color-03: #DFD7BF;
-  --site-color-04: #3F2305;
+  --site-color-01: rgb(245, 242, 234);
+  --site-color-02: rgb(223, 215, 191);
+  --site-color-03: rgb(63, 35, 5);
   font-size: 62.5%;
+  font-family: 'Ysabeau Infant', sans-serif;
 }
 
 
 body {
-  background-color: var(--site-color-03);
+  background-color: var(--site-color-02);
 }
 
 
 p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: var(--site-color-01);
-  font-size: 1.7rem;
+  font-size: 2.0rem;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
 }
 
 .full-size-div {
   height: 100vh;
   height: 100svh;
+
 }
 
-.hero-section {
+.section {
+  padding: 30px 0px;
+}
+
+/* HERO SECTION */
+
+.hero {
   background-image: url("img/old-shop.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -36,17 +46,39 @@ p {
 
 .hero-content {
   background-color: rgba(0, 0, 0, 0.8);
-  box-shadow: 0 0 50px 5px rgba(223, 215, 191, 0.4);
+  box-shadow: 0 0 30px 5px rgba(223, 215, 191, 0.3);
   width: 100%;
   border-radius: 30px;
   padding: 50px 30px 0px 30px;
 }
 
 .hero-logo svg {
-  color: var(--site-color-03);
+  color: var(--site-color-02);
 }
 
 .hero-text p {
+  color: var(--site-color-01);
   margin: 50px 0px;
   text-align: center;
+}
+
+/* OPENING HOURS SECTION */
+.opening-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--site-color-03);
+}
+
+.opening-hours-table {
+  font-size: 2.2rem;
+}
+
+.opening-hours-table th {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.address {
+  background-color: white;
 }
