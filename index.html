@@ -16,9 +16,19 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<header class="header">
+		<div id ="topnav" class="navbar" onclick="toggleMenu()">
 			Menu
-		</header>
+		</div>
+		<div id="topnav-links">
+			<nav>
+				<ul>
+					<li><a class="topnav-link" href="#visit-info">Plan je bezoek</a></li>
+					<li><a class="topnav-link" href="#">Over ons</a></li>
+					<li><a class="topnav-link" href="#">Assortiment</a></li>
+					<li><a class="topnav-link" href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
 
 		<section class="hero full-size-div section">
 			<div class="hero-content">
@@ -211,9 +221,9 @@
 
 		</section>
 
-		<section id="opening-hours" class="opening-hours section">
-			<h1>Openingstijden</h1>
-			<table class="opening-hours-table">
+		<section id="visit-info" class="visit-info section">
+			<h1>Plan je bezoek</h1>
+			<table class="visit-info-table">
 				<tr><th>Zondag</th><td>Gesloten</td></tr>
 				<tr><th>Maandag</th><td>12:00 - 16:00</td></tr>
 				<tr><th>Dinsdag</th><td>10:00 - 17:00</td></tr>
@@ -224,5 +234,18 @@
 			</table>
 
 		</section>
+		<script>
+		function toggleMenu() {
+			const topnav = document.getElementById("topnav");
+			const links = document.getElementById("topnav-links");
+			if (links.style.display === "block") {
+				topnav.textContent = "Menu";
+				links.style.display = "none";
+			} else {
+				topnav.textContent = "Sluiten";
+				links.style.display = "block";
+			}
+		}
+		</script>
 	</body>
 </html>

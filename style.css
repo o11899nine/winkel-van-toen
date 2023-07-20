@@ -9,6 +9,7 @@
 
 body {
   background-color: var(--site-color-02);
+  color: var(--site-color-01);
 }
 
 
@@ -31,14 +32,38 @@ h1 {
   padding: 30px 0px;
 }
 
-.header {
-  background-color: var(--site-color-03);
+.navbar {
+  height: 50px;
+  position: fixed;
+  background-color: #140A08;
   width: 100%;
   font-size: 1.6rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--site-color-01);
+}
+
+#topnav-links {
+  background-color: var(--site-color-02);
+  display: none;
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  box-shadow: 0 4px 5px -5px black;
+}
+
+#topnav-links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: 2.0rem;
+  padding: 10px 0px;
+}
+
+.topnav-link {
+  text-decoration: none;
+  color: var(--site-color-03);
 }
 
 /* HERO SECTION */
@@ -60,7 +85,7 @@ h1 {
   box-shadow: 0 0 30px 5px rgba(223, 215, 191, 0.3);
   width: 100%;
   border-radius: 30px;
-  padding: 50px 30px 0px 30px;
+  padding: 30px 30px 0px 30px;
 }
 
 .hero-logo {
@@ -76,24 +101,23 @@ h1 {
 }
 
 .hero-text p {
-  color: var(--site-color-01);
-  margin: 50px 0px;
+  margin: 30px 0px;
   text-align: center;
 }
 
 /* OPENING HOURS SECTION */
-.opening-hours {
+.visit-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: var(--site-color-03);
 }
 
-.opening-hours-table {
+.visit-info-table {
   font-size: 1.8rem;
 }
 
-.opening-hours-table th {
+.visit-info-table th {
   text-align: right;
   padding-right: 20px;
 }
