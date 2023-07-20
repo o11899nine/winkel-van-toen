@@ -16,12 +16,13 @@
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<div id ="topnav" class="navbar" onclick="toggleMenu()">
+		<div id="topnav" class="navbar" onclick="toggleMenu()">
 			Menu
 		</div>
 		<div id="topnav-links">
 			<nav>
 				<ul>
+					<li><a class="topnav-link" href="#home">Home</a></li>
 					<li><a class="topnav-link" href="#visit-info">Plan je bezoek</a></li>
 					<li><a class="topnav-link" href="#">Over ons</a></li>
 					<li><a class="topnav-link" href="#">Assortiment</a></li>
@@ -30,7 +31,7 @@
 			</nav>
 		</div>
 
-		<section class="hero full-size-div section">
+		<section id="home" class="hero full-size-div">
 			<div class="hero-content">
 				<div class="hero-logo">
 					<!-- LOGO SVG -->
@@ -221,7 +222,7 @@
 
 		</section>
 
-		<section id="visit-info" class="visit-info section">
+		<section id="visit-info" class="visit-info full-size-div">
 			<h1>Plan je bezoek</h1>
 			<table class="visit-info-table">
 				<tr><th>Zondag</th><td>Gesloten</td></tr>
@@ -233,8 +234,18 @@
 				<tr><th>Zaterdag</th><td>Gesloten</td></tr>
 			</table>
 
+
+				<iframe class="google-map"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d614.4064766615166!2d4.316215869687698!3d51.977244624331476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b4f088eb365f%3A0xd0d55bcaa5afa6de!2sSingel%206%2C%202636%20CS%20Schipluiden!5e0!3m2!1sen!2snl!4v1689858048883!5m2!1sen!2snl"
+					allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
 		</section>
+
 		<script>
+		const topnavLinks = document.querySelectorAll(".topnav-link");
+		
+		topnavLinks.forEach(link => {link.addEventListener("click", toggleMenu)});
+
 		function toggleMenu() {
 			const topnav = document.getElementById("topnav");
 			const links = document.getElementById("topnav-links");
