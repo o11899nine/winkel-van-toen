@@ -22,11 +22,11 @@
 		<div id="topnav-links">
 			<nav>
 				<ul>
-					<li><a class="topnav-link" href="#home">Home</a></li>
-					<li><a class="topnav-link" href="#visit-info">Plan je bezoek</a></li>
-					<li><a class="topnav-link" href="#">Over ons</a></li>
-					<li><a class="topnav-link" href="#">Assortiment</a></li>
-					<li><a class="topnav-link" href="#">Contact</a></li>
+					<a class="topnav-link" href="#home"><li>Home</li></a>
+					<a class="topnav-link" href="#visit-info"><li>Plan je bezoek</li></a>
+					<a class="topnav-link" href="#"><li>Over ons</li></a>
+					<a class="topnav-link" href="#"><li>Assortiment</li></a>
+					<a class="topnav-link" href="#"><li>Contact</li></a>
 				</ul>
 			</nav>
 		</div>
@@ -243,7 +243,6 @@
 
 		<script>
 		const topnavLinks = document.querySelectorAll(".topnav-link");
-		
 		topnavLinks.forEach(link => {link.addEventListener("click", toggleMenu)});
 
 		function toggleMenu() {
@@ -257,6 +256,7 @@
 				links.style.display = "block";
 			}
 		}
+
 		</script>
 	</body>
 </html>
